@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import { LitElement } from 'lit';
+import '@material/mwc-button';
 /**
  * An example element.
  *
