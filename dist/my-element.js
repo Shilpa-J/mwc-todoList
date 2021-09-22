@@ -11,7 +11,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-// import '@material/mwc-button';
+import '@material/mwc-button';
 /**
  * An example element.
  *
@@ -34,6 +34,7 @@ let MyElement = class MyElement extends LitElement {
     render() {
         return html `
       <h1>${this.sayHello(this.name)}!</h1>
+      <mwc-button id="myButton" label="Click Me!" raised></mwc-button>
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
       </button>
